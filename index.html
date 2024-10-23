@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PutaClic</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="game-container">
+      <h1>PUTACLIC</h1>
+      <p>Consigne: clique sur les Objets !</p>
+      <div id="level-select">
+        <h2>Choisissez un niveau :</h2>
+        <button class="btn-easy" onclick="startGame('easy')">¡Chiquito! (Facile)</button>
+        <button class="btn-medium" onclick="startGame('medium')">
+          ¡Valiente! (Intermédiaire)
+        </button>
+        <button class="btn-hard" onclick="startGame('hard')">¡Luchador! (Difficile)</button>
+      </div>
+
+      <div id="game-info" style="display: none">
+        <h3>Temps restant : <span id="time-left"></span>s</h3>
+        <h3>Score : <span id="score"></span></h3>
+        <p>Meilleur score : <span id="best-score">0</span></p>
+      </div>
+
+      <div id="game-area"></div>
+
+      <!-- <button onclick="clearLocalStorage()">Vider le Score</button> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
